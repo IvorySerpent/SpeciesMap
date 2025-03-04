@@ -1,0 +1,117 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#legend {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: middle;
+    margin-left: 100px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.legend-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin-left: 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+/* Search and Filter Box */
+.search-box, .filter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto 15px;
+}
+
+.search-box input, .filter-box select {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 18px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+#results-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
