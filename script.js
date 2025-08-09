@@ -1,34 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    
-        const correctPassword = "~HPfe)evOWwN$IvtOKf,fsUDVG8,-+v0-Y0:I5,*]KI?J;x*4"; // Change this password
-        const storedAccess = sessionStorage.getItem("accessGranted");
-    
-        // Hide the map and legend initially
-        document.getElementById("map").style.display = "none";
-        document.getElementById("legend").style.display = "none";
-    
-        if (!storedAccess) {
-            let userPassword = prompt("Enter password to access this page:");
-    
-            if (userPassword !== correctPassword) {
-                alert("Incorrect password. Redirecting...");
-                window.location.href = "https://www.google.com"; // Redirect to Google
-            } else {
-                sessionStorage.setItem("accessGranted", "true");
-    
-                // Show the map and legend after successful entry
-                document.getElementById("map").style.display = "block";
-                document.getElementById("legend").style.display = "block";
-            }
-        } else {
-            // If already granted access, ensure the map and legend are visible
-            document.getElementById("map").style.display = "block";
-            document.getElementById("legend").style.display = "block";
-        }
-    });
-    
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
